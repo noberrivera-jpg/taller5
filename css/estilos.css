@@ -1,0 +1,187 @@
+/* =====================================================
+   estilos.css 
+   ===================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway:wght@300;400;500;600&display=swap");
+
+body {
+    margin: 0;
+    background: #ffffff;
+}
+
+/* ---------- EJERCICIO 2 ---------- */
+#ejercicio2 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+#ejercicio2 .panel {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 55px 20px 45px 20px;
+    background: #f4f3fd;
+}
+#ejercicio2 .panel h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 19px;
+    color: #222;
+    margin: 0 0 45px 0;
+}
+#ejercicio2 .grid {
+    width: 62%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px 14px;
+}
+#ejercicio2 .tarjeta {
+    margin: 0;
+    text-align: center;
+}
+#ejercicio2 .tarjeta img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.3 / 1;
+    object-fit: cover;
+    background: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+#ejercicio2 .tarjeta figcaption {
+    margin-top: 12px;
+    font-size: 11px;
+    color: #333;
+}
+#ejercicio2 .tarjeta figcaption.gris {
+    color: #aaa;
+}
+#ejercicio2 .caja-proximamente {
+    width: 100%;
+    aspect-ratio: 1.3 / 1;
+    box-sizing: border-box;
+    background: #f7f6fc;
+    border: 1px solid #e6e5f0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ejercicio2 .icono-grid {
+    width: 46px;
+    height: 46px;
+    background: #4a52e0;
+    border-radius: 11px;
+    display: grid;
+    grid-template-columns: repeat(3, 7px);
+    grid-template-rows: repeat(3, 7px);
+    gap: 4px;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 6px 14px rgba(74, 82, 224, 0.35);
+}
+#ejercicio2 .icono-grid span {
+    border: 1.5px solid #ffffff;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+/* ---------- EJERCICIO 3 ---------- */
+#ejercicio3 {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: #666;
+}
+#ejercicio3 .contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 40px 50px 40px;
+}
+#ejercicio3 .contenedor h2 {
+    font-weight: 300;
+    font-size: 30px;
+    color: #4a5470;
+    margin: 0 0 18px 0;
+}
+#ejercicio3 .intro {
+    font-size: 12px;
+    line-height: 2;
+    color: #666;
+    margin: 0 0 45px 0;
+}
+#ejercicio3 .columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 70px;
+}
+#ejercicio3 .item {
+    display: flex;
+    gap: 26px;
+    margin-bottom: 35px;
+}
+#ejercicio3 .icono {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+#ejercicio3 .cuerpo h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #2f4a73;
+    margin: 0 0 14px 0;
+}
+#ejercicio3 .cuerpo p {
+    font-size: 12px;
+    line-height: 2;
+    color: #666;
+    margin: 0;
+}
+#ejercicio3 .boton {
+    margin-left: 58px;
+    background: #2a5d8f;
+    color: #ffffff;
+    border: none;
+    padding: 11px 25px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+#ejercicio3 .boton:hover {
+    background: #1f4a73;
+}
+
+/* ---------- INDEX ---------- */
+#index {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef1f7;
+}
+#index .caja {
+    background: #ffffff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#index .caja h1 {
+    color: #2a5d8f;
+    font-size: 26px;
+    margin: 0 0 30px 0;
+}
+#index .enlace {
+    display: block;
+    margin: 12px 0;
+    padding: 12px 30px;
+    background: #2a5d8f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+#index .enlace:hover {
+    background: #1f4a73;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 650px) {
+    #ejercicio2 .grid { width: 90%; }
+    #ejercicio3 .columnas { grid-template-columns: 1fr; }
+}
